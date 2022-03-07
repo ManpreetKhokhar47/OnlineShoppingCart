@@ -1,0 +1,434 @@
+﻿
+body 
+{
+    background-color:#4b85c7;
+    font-family:Arial,Helvetica,sans-serif;
+    color:white;
+}
+#wrapper
+{
+    position:relative;
+    margin:50px auto;
+    width:1060px;
+    border:10px solid gray;
+
+}
+#header
+{
+    height:170px;
+    background-image:url(images/top.gif);
+    
+}
+#logo
+{
+    position:absolute;
+    top:35px;
+    left:70px;
+    height:86px;
+    width:190px;
+    background-image:url(images/eslogo.png);
+}
+#signin
+{
+    position:absolute;
+    top:15px;
+    left:800px;
+    height:21px;
+    width:80px;
+    background-image:url(images/button.gif);
+    background-repeat:repeat-x;
+    font-size:14px;
+    font-weight:bold;
+    color:White;
+    padding-top:5px;
+    padding-left:20px;
+    
+ }
+
+ #register
+{
+    position:absolute;
+    top:15px;
+    left:940px;
+    height:21px;
+    width:86px;
+    background-image:url(images/button.gif);
+    background-repeat:repeat-x;
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    color:White;
+    padding-top:5px;
+    padding-left:14px;
+ }
+
+ #mycart
+ {
+     position:absolute;
+     top:60px;
+     left:800px;
+     height:100px;
+     width:240px;
+     background-image:url(images/header_bg.gif);
+     background-repeat:repeat-x;
+ }
+ #mycartheader
+ {
+
+     height:25px;
+     width:160px;
+     background-image:url(images/navmenu_bg.png);
+     background-repeat:repeat-x;
+     font-size:14px;
+     font-weight:bold;
+     color:White;
+     padding-top:5px;
+     padding-left:80px;
+ } 
+ #mycartlogo
+ {
+     position:absolute;
+     top:40px;
+     left:10px;
+     height:50px;
+     width:50px;
+     background-image:url(images/icon5.png);
+ }
+  #items
+ {
+     position:absolute;
+     top:70px;
+     left:70px;
+     width:135px;
+     height:20px;
+     color:White;
+     font-size:14px;
+     font-weight:bold;
+     padding-left:15px;
+ }
+  #amount
+ {
+     position:absolute;
+     top:47px;
+     left:70px;
+     width:150px;
+     height:20px;
+     color:White;
+     font-size:14px;
+     font-weight:bold;
+ }
+            
+#menubar
+{
+    height:37px;
+    background-image:url(images/navmenu_bg.png);
+    padding-top:20px;
+}
+#banner
+{
+    height:278px;
+    border-top:10px solid gray;
+    border-bottom:10px solid gray;
+}
+#content_area
+{
+    min-height:870px;
+}
+#content
+{
+    margin-left:250px;
+    width:810px;
+    background-color:White;
+    min-height:870px;
+    color:Black;
+}
+#footer
+{
+    height:40px;
+    background-image:url(images/top.gif);
+    background-repeat:repeat-x;
+    padding-top:20px;
+    
+}
+#search_by_brand_container
+{
+    width:249px;
+}
+#search_by_price_container
+{
+    width:249px;
+}
+#search_by_categories_container
+{
+    width:249px;
+}
+#search_by_brand
+{
+    height:25px;
+    width:208px;
+    background-image:url(images/top.gif);
+    background-repeat:repeat-x;
+    font-size:14px;
+    font-weight:bold;
+    color:White;
+    padding-top:15px;
+    padding-left:40px;
+    text-align: left;
+}
+#search_by_brand_list
+{
+    height:250px;
+    width:248px;
+    background-image:url(images/header_bg.gif);
+    background-repeat:repeat-x;
+}
+#search_by_price
+{
+
+    height:25px;
+    width:208px;
+    background-image:url(images/top.gif);
+    background-repeat:repeat-x;
+    font-size:14px;
+    font-weight:bold;
+    color:White;
+    padding-top:15px;
+    padding-left:40px;
+}
+#search_by_price_list
+{
+
+    height:250px;
+    width:248px;
+    
+    background-image:url(images/header_bg.gif);
+    background-repeat:repeat-x;
+}
+#search_by_categories
+{
+
+    height:25px;
+    width:208px;
+    background-image:url(images/top.gif);
+    background-repeat:repeat-x;
+    font-size:14px;
+    font-weight:bold;
+    color:White;
+    padding-top:15px;
+    padding-left:40px;
+}
+#search_by_categories_list
+{
+
+    height:250px;
+    width:248px;
+    background-image:url(images/header_bg.gif);
+    background-repeat:repeat-x;
+}
+#sidebar
+{
+    float:left;
+    width:250px;
+}
+.button_style
+{
+    text-decoration:none;
+}
+.button_style:hover
+{
+    text-decoration:underline;
+}
+.style1
+{
+    padding-bottom:20px;
+    padding-left:20px;
+    width: 100%;
+    font-weight:200;
+    height: 191px;
+}
+#registerarea
+{
+    width:700px;
+    border:5px solid #999999;
+    background-color:#1d5c9a;
+    margin:0px auto;
+}
+#registertag
+{
+    padding-left:15px;
+}
+.link_button
+{
+    padding-left:40px;
+    color:White;
+    text-decoration:none;
+}
+.link_button:hover
+{
+    text-decoration:underline;
+    font-style:italic;
+}
+textbox
+{
+    height:30px;
+    width:150px;
+}
+.textbox
+{
+    height:30px;
+    width:150px;
+    border:none;
+    background-color:#cccccc;
+    font-size:16px;
+    margin-right:20px;
+    padding-left:5px;
+}
+.divstyle
+{
+    float:left;
+    height:300px;
+    width:230px;
+    border:3px solid #999999;
+    margin:20px 15px;
+}
+.divstyle:hover
+{
+    border-color:#1d5c9a;
+}
+DropDownList
+{
+    padding-left:5px;
+    padding-top:15px;
+}
+#adminlogin
+{
+    margin:0px auto;
+    height:500px;
+    width:700px;
+    border:1px solid black;
+}
+#fp
+{
+    margin:0px auto;
+    padding-left:20px;
+    padding-top:50px;
+}
+    
+    
+#topmargin
+{
+    height:38px;
+}
+#welcome
+{
+    position:absolute;
+    top:15px;
+    left:720px;
+    height:21px;
+    width:196px;
+    font-size:14px;
+    color:White;
+    padding-top:5px;
+    
+ }
+   #logout
+{
+    position:absolute;
+    top:15px;
+    left:980px;
+    height:21px;
+    width:60px;
+    font-size:14px;
+    color:White;
+    padding-top:5px;
+ }
+ #norecord
+ {
+     padding-left:20px;
+     padding-top:30px;
+     color:Blue;
+ }
+ .mycart
+ {
+     color:White;
+     text-decoration:none;
+ }
+ .mycart:hover
+ {
+     text-decoration:underline;
+ }
+ #ttlamt
+ {
+     margin:0px auto;
+     color:Blue;
+     width:400px;
+     height:70px;
+     border:5px solid gray;
+ }
+ #address
+ {
+     padding-left:20px;
+     width:470px;
+ }
+ .txtbx
+ {
+     height:20px;
+     width:200px;
+ }
+  .txtadr
+ {
+     height:50px;
+     width:200px;
+ }
+ .save
+ {
+     text-decoration:none;
+     font-weight:bold;
+ }
+  .save:hover
+ {
+     text-decoration:underline;
+ }
+ .menulink
+ {
+     color:White;
+     text-decoration:none;
+     font-size:18px;
+ }
+ .menulink:hover
+ {
+     color:White;
+     text-decoration:underline;
+     font-size:18px;
+ }  
+ .profile
+ {
+     padding-left:50px;
+     width:700px;
+ }
+ #topmargin1
+{
+    height:38px;
+}
+.image1
+{
+    float:left;
+    width:320px;
+    margin-left:40px;
+    border:5px solid gray;
+    margin-bottom:40px;
+}
+.blogo
+{
+    float:left;
+    border:2px solid gray;
+    margin-left:33px;
+    margin-bottom:40px;
+    height:88px;
+    width:118px;
+}
+#contact
+{
+    width:700px;
+    padding-left:30px;
+}

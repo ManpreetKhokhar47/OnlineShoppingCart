@@ -1,0 +1,223 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="lgn_and_reg.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+        <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script src="jquery-1.8.1.min.js" type="text/javascript"></script>
+    <script src="jqbanner.js" type="text/javascript"></script>
+    <link href="jqbanner.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+            <form id="form1" runat="server">
+  
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+
+             <div id="wrapper">
+
+                 <div id="header">
+                
+                    <div id="logo">
+                    </div>
+
+                        <div id="welcome">
+                    Welcome : 
+                        <asp:Label ID="Label1" runat="server"></asp:Label>
+                    </div>
+
+                    <div id="logout">
+                        <asp:LinkButton ID="LinkButton15" runat="server" CssClass="button_style" 
+                            ForeColor="White" onclick="LinkButton1_Click">Logout</asp:LinkButton>
+                    </div>
+                        
+
+                        <div id="mycart">
+                    
+                            <div id="mycartheader">
+                                <asp:LinkButton ID="LinkButton25" runat="server" CssClass="mycart" 
+                                    PostBackUrl="~/mycartdetail.aspx">MY CART</asp:LinkButton>
+                            </div>
+
+                            <div id="mycartlogo">
+                            </div>
+
+                            <div id="items">
+                            Items :
+                                <asp:Label ID="lblitm" runat="server"></asp:Label>
+                            </div>
+
+                            <div id="amount">
+                            Amount : 
+                                <asp:Label ID="lblamt" runat="server"></asp:Label>
+                            </div>
+
+                        </div>
+                 </div>
+
+            <div id="menubar">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton16" runat="server" CssClass="menulink" 
+                    PostBackUrl="~/lgnhome.aspx">Home</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton27" runat="server" CssClass="menulink" 
+                    PostBackUrl="~/lnewarrival.aspx">New Arrival</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton28" runat="server" CssClass="menulink" 
+                    PostBackUrl="~/lgntopbrands.aspx">Top Brands</asp:LinkButton>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton17" runat="server" CssClass="menulink" 
+                    PostBackUrl="~/lgncontact.aspx" >Contact Us</asp:LinkButton>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton29" runat="server" CssClass="menulink" 
+                    PostBackUrl="~/myprofile.aspx">My Profile</asp:LinkButton>
+            </div>
+
+            <div id="banner">
+            <div id="jqb_object">
+
+<div class="jqb_slides">
+<div class="jqb_slide" title="slide title" ><img src="img/banner1.jpg"/></div>
+<div class="jqb_slide" title="slide title" ><img src="img/banner2.jpg"/></div>
+<div class="jqb_slide" title="slide title" ><img src="img/banner3.jpg"/></div>
+
+</div>
+
+</div>
+            </div>
+
+            <div id="content_area">
+
+                <div id="sidebar">
+                
+                    <div id="search_by_brand_container">
+                    
+                        <div id="search_by_brand">
+                            SEARCH BY BRAND
+                        </div>
+
+                        <div id="search_by_brand_list">
+                            &nbsp;&nbsp;
+                            <br />
+                            <asp:LinkButton ID="LinkButton2" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/lresult.aspx?brd=adidas">Adidas</asp:LinkButton>
+                            <br />
+                            <br />
+                            <asp:LinkButton ID="LinkButton3" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/lresult.aspx?brd=nike">Nike</asp:LinkButton>
+                            <br />
+                            <br />
+                            <asp:LinkButton ID="LinkButton4" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/lresult.aspx?brd=reebok">Reebok</asp:LinkButton>
+                            <br />
+                            <br />
+                            <asp:LinkButton ID="LinkButton5" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/lresult.aspx?brd=fila">Fila</asp:LinkButton>
+                            <br />
+                            <br />
+                            <asp:LinkButton ID="LinkButton6" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/lresult.aspx?brd=lee">Lee</asp:LinkButton>
+                            <br />
+                            <br />
+                            <asp:LinkButton ID="LinkButton7" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/lresult.aspx?brd=puma">Puma</asp:LinkButton>
+                        </div>
+
+                    </div>
+
+                 <div id="search_by_price_container">
+                    
+                    <div id="search_by_price">
+                       SEARCH BY PRICE
+                    </div>
+
+                    <div id="search_by_price_list">
+                        <br />
+                        <asp:LinkButton ID="LinkButton8" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?prc1=0&amp;prc2=2000">0-2000</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton9" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?prc1=2000&amp;prc2=4000">2000-4000</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton10" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?prc1=4000&amp;prc2=6000">4000-6000</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton11" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?prc1=6000&amp;prc2=8000">6000-8000</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton12" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?prc1=8000&amp;prc2=10000">8000-10,000</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton13" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?prc1=10000">Above 10,000</asp:LinkButton>
+                    </div>
+
+                </div>
+
+                <div id="search_by_categories_container">
+                    
+                    <div id="search_by_categories">
+                        SEARCH BY CATEGORIES
+                    </div>
+
+                    <div id="search_by_categories_list">
+                        <br />
+                        <asp:LinkButton ID="LinkButton14" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?cat=clothing">Clothing</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton20" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?cat=shoes">Shoes</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton21" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?cat=accessories">Accessories</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton23" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?cat=watches">Watches</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton24" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?cat=sunglasses">Sunglasses</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/lresult.aspx?cat=sportswear">Sports Wear</asp:LinkButton>
+                    </div>
+
+                </div>
+
+                </div>
+
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+           
+                </div>
+
+            </div>
+
+            <div id="footer">
+            <center>Copyright © 2013 Jabong.com All Rights Reserved</center>
+            </div>
+        
+       
+       </div>
+
+    
+
+    </form>
+
+
+</body>
+</html>

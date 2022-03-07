@@ -1,0 +1,380 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <script src="jquery-1.8.1.min.js" type="text/javascript"></script>
+    <script src="jqbanner.js" type="text/javascript"></script>
+    <link href="jqbanner.css" rel="stylesheet" type="text/css" />
+    
+    <style type="text/css">
+        .style3
+        {
+            height: 22px;
+            width: 163px;
+        }
+        .style4
+        {
+            width: 163px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+  
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+
+             <div id="wrapper">
+
+                 <div id="header">
+                
+                    <div id="logo">
+                    </div>
+
+                    
+                        <div id="signin">
+                            <asp:Label ID="Label1" runat="server" Text="SIGN IN" CssClass="button_style"></asp:Label>
+                        </div>
+
+                        <div id="register">
+                            <asp:Label ID="Label2" runat="server" Text="REGISTER" CssClass="button_style"></asp:Label>
+                        </div>
+
+                        <div id="mycart">
+                    
+                            <div id="mycartheader">
+                                MY CART
+                            </div>
+
+                            <div id="mycartlogo">
+                            </div>
+
+                            <div id="items">
+                            Items :
+                                0</div>
+
+                            <div id="amount">
+                            Amount : 
+                                0</div>
+
+                        </div>
+                 </div>
+
+            <div id="menubar">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton25" runat="server" CssClass="menulink" 
+                    PostBackUrl="~/home.aspx">Home</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton27" runat="server" CssClass="menulink" 
+                    PostBackUrl="~/newarrival.aspx">New Arrival</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton28" runat="server" CssClass="menulink" 
+                    PostBackUrl="~/topbrands.aspx">Top Brands</asp:LinkButton>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton29" runat="server" CssClass="menulink" 
+                    PostBackUrl="~/contact.aspx">Contact Us</asp:LinkButton>
+            </div>
+
+            <div id="banner">
+            <div id="jqb_object">
+
+<div class="jqb_slides">
+<div class="jqb_slide" title="slide title" ><img src="img/banner1.jpg"/></div>
+<div class="jqb_slide" title="slide title" ><img src="img/banner2.jpg"/></div>
+<div class="jqb_slide" title="slide title" ><img src="img/banner3.jpg"/></div>
+
+</div>
+
+</div>
+            </div>
+
+            <div id="content_area">
+
+                <div id="sidebar">
+                
+                    <div id="search_by_brand_container">
+                    
+                        <div id="search_by_brand">
+                            SEARCH BY BRAND
+                        </div>
+
+                        <div id="search_by_brand_list">
+                            &nbsp;&nbsp;
+                            <br />
+                            <asp:LinkButton ID="LinkButton2" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/result.aspx?brd=adidas">Adidas</asp:LinkButton>
+                            <br />
+                            <br />
+                            <asp:LinkButton ID="LinkButton3" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/result.aspx?brd=nike">Nike</asp:LinkButton>
+                            <br />
+                            <br />
+                            <asp:LinkButton ID="LinkButton4" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/result.aspx?brd=reebok">Reebok</asp:LinkButton>
+                            <br />
+                            <br />
+                            <asp:LinkButton ID="LinkButton5" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/result.aspx?brd=fila">Fila</asp:LinkButton>
+                            <br />
+                            <br />
+                            <asp:LinkButton ID="LinkButton6" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/result.aspx?brd=lee">Lee</asp:LinkButton>
+                            <br />
+                            <br />
+                            <asp:LinkButton ID="LinkButton7" runat="server" CssClass="link_button" 
+                                PostBackUrl="~/result.aspx?brd=puma">Puma</asp:LinkButton>
+                        </div>
+
+                    </div>
+
+                 <div id="search_by_price_container">
+                    
+                    <div id="search_by_price">
+                       SEARCH BY PRICE
+                    </div>
+
+                    <div id="search_by_price_list">
+                        <br />
+                        <asp:LinkButton ID="LinkButton8" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?prc1=0&amp;prc2=2000">0-2000</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton9" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?prc1=2000&amp;prc2=4000">2000-4000</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton10" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?prc1=4000&amp;prc2=6000">4000-6000</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton11" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?prc1=6000&amp;prc2=8000">6000-8000</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton12" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?prc1=8000&amp;prc2=10000">8000-10,000</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton13" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?prc1=10000">Above 10,000</asp:LinkButton>
+                    </div>
+
+                </div>
+
+                <div id="search_by_categories_container">
+                    
+                    <div id="search_by_categories">
+                        SEARCH BY CATEGORIES
+                    </div>
+
+                    <div id="search_by_categories_list">
+                        <br />
+                        <asp:LinkButton ID="LinkButton14" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?cat=clothing">Clothing</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton20" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?cat=shoes">Shoes</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton21" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?cat=accessories">Accessories</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton23" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?cat=watches">Watches</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton24" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?cat=sunglasses">Sunglasses</asp:LinkButton>
+                        <br />
+                        <br />
+                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="link_button" 
+                            PostBackUrl="~/result.aspx?cat=sportswear">Sports Wear</asp:LinkButton>
+                    </div>
+
+                </div>
+
+                </div>
+
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+           
+                </div>
+
+            </div>
+
+            <div id="footer">
+            <center>Copyright © 2013 easyshop.com All Rights Reserved</center>
+            </div>
+        
+       
+       </div>
+
+       <%-----Login Box start-----%>
+    <asp:Panel ID="Panel1" runat="server" BackImageUrl="~/images/header_bg1.gif" Width="250px" BorderColor="#999999" BorderStyle="Solid" 
+        BorderWidth="5px">
+
+        <center><h4>MEMBER LOGIN</h4></center>
+
+        <table class="style1">
+        <tr>
+            <td>Email Id : </td>
+        </tr>
+        <tr>
+        <td><asp:TextBox ID="txtlgnemail" runat="server" CssClass="textbox" 
+                ValidationGroup="lgn"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>Password : </td>
+        </tr>
+        <tr>
+        <td><asp:TextBox ID="txtlgnpwd" runat="server" TextMode="Password" 
+                CssClass="textbox" ValidationGroup="lgn"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+        <td><asp:CheckBox ID="CheckBox1" runat="server" ValidationGroup="lgn" />Remember me next time</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+        <td>
+            <asp:Button ID="btnlgn" runat="server" Text="Login" Height="30px" 
+                onclick="btnlgn_Click" Width="100px" ValidationGroup="lgn" /></td>
+        </tr>
+        <tr>
+        <td>
+            <asp:Label ID="Label3" runat="server" ForeColor="Red"></asp:Label></td>
+        </tr>
+        <tr>
+        <td>
+            &nbsp;</td>
+        </tr>
+    </table>
+
+    </asp:Panel>
+
+    <cc1:PopupControlExtender ID="PopupControlExtender1" runat="server" 
+        PopupControlID="panel1" TargetControlID="Label1" OffsetX="-20" OffsetY="22">
+    </cc1:PopupControlExtender>
+
+     <%-----Login Box End-----%>
+     <%--Register box start--%>
+    <asp:Panel ID="Panel2" runat="server" Width="250px" 
+        BackImageUrl="~/images/header_bg1.gif" BorderColor="#999999" BorderStyle="Solid" 
+        BorderWidth="5px">
+
+        <center><h4>NEW TO EASY SHOP? REGISTER</h4></center>
+            
+            <table class="style1">
+                <tr>
+                    <td class="style4">
+                        E Mail id</td>
+                </tr>
+                <tr>
+                    <td class="style4">
+                        <asp:TextBox ID="txtemail" runat="server" CssClass="textbox" 
+                            ValidationGroup="reg"></asp:TextBox>
+                    </td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                            ControlToValidate="txtemail" ErrorMessage="*" 
+                            ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
+                            ValidationGroup="reg"></asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                            ControlToValidate="txtemail" ErrorMessage="*" ValidationGroup="reg"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style4">
+                        Name</td>
+                </tr>
+                <tr>
+                    <td class="style4">
+                        <asp:TextBox ID="txtname" runat="server" CssClass="textbox" 
+                            ValidationGroup="reg"></asp:TextBox>
+                    </td>
+                    <td>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" 
+                            ControlToValidate="txtname" ErrorMessage="*" 
+                            ValidationExpression="^[a-zA-Z\s]+$" ValidationGroup="reg"></asp:RegularExpressionValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                            ControlToValidate="txtname" ErrorMessage="*" ValidationGroup="reg"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style3">
+                        Password</td>
+                </tr>
+                <tr>
+                    <td class="style4">
+                        <asp:TextBox ID="txtpass" runat="server" CssClass="textbox" 
+                            ValidationGroup="reg"></asp:TextBox>
+                    </td>
+                    <td>
+                        <asp:CustomValidator ID="CustomValidator1" runat="server" 
+                            ControlToValidate="txtpass" ErrorMessage="*" 
+                            onservervalidate="CustomValidator1_ServerValidate" ValidationGroup="reg"></asp:CustomValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+                            ControlToValidate="txtpass" ErrorMessage="*" ValidationGroup="reg"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="style4">
+                        Confirm Password</td>
+                </tr>
+                <tr>
+                    <td class="style4">
+                        <asp:TextBox ID="txtcpass" runat="server" CssClass="textbox" 
+                            ValidationGroup="reg"></asp:TextBox>
+                    </td>
+                    <td>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" 
+                            ControlToCompare="txtpass" ControlToValidate="txtcpass" ErrorMessage="*" 
+                            ValidationGroup="reg"></asp:CompareValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
+                            ControlToValidate="txtcpass" ErrorMessage="*" ValidationGroup="reg"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
+                <td class="style4">
+                    <asp:Label ID="Label4" runat="server" ForeColor="Red"></asp:Label></td>
+                <td></td>
+                </tr>
+                <tr>
+                    <td class="style4">
+                        <asp:Button ID="btnreg" runat="server" Height="30px" onclick="btnreg_Click" 
+                            Text="Register" Width="100px" ValidationGroup="reg" />
+                    </td>
+                </tr>
+            </table>
+         
+    
+     
+    </asp:Panel>
+    <cc1:PopupControlExtender ID="PopupControlExtender2" runat="server" 
+        PopupControlID="panel2" TargetControlID="Label2" OffsetX="-154" 
+        OffsetY="22">
+    </cc1:PopupControlExtender>
+
+    <%--Register box End--%>
+    
+
+    </form>
+</body>
+</html>
+

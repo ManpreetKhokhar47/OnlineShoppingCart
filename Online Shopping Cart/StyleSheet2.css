@@ -1,0 +1,95 @@
+﻿body {
+}
+#wrapper
+{
+    position:relative;
+    margin:auto;
+    margin-top:0px;
+    margin-bottom:50px;
+    width:1060px;
+    border:1px solid black;
+}
+#header
+{
+    height:170px;
+    background-image:url(images/top.gif);
+    
+}
+#logo
+{
+    position:absolute;
+    top:35px;
+    left:70px;
+    height:86px;
+    width:190px;
+    background-image:url(images/eslogo.png);
+}
+    
+#menubar
+{
+    padding-top:5px;
+    height:25px;
+    background-color:Gray;
+}
+#content
+{
+    margin-bottom:50px;
+}
+.menustyle
+{
+    padding-left:20px;
+    color:White;
+}
+#welcome
+{
+    position:absolute;
+    top:15px;
+    left:750px;
+    height:21px;
+    width:166px;
+    font-size:14px;
+    color:White;
+    padding-top:5px;
+    
+ }
+  #logout
+{
+    position:absolute;
+    top:15px;
+    left:980px;
+    height:21px;
+    width:60px;
+    font-size:14px;
+    color:White;
+    padding-top:5px;
+ }
+ .textboxstyle
+ {
+     width:150px;
+ }
+ .dropdownliststyle
+ {
+     width:155px;
+ }
+ .linkbutton
+ {
+     color:White;
+ }
+ #managep
+ {
+     width:900px;
+     margin:20px auto;
+ }
+ #addprd
+ {
+     margin: 50px auto;
+     height:500px;
+     width:600px;
+ }
+ 
+#acp
+{
+    margin:20px auto;
+    height:300px;
+    width:500px;
+}
